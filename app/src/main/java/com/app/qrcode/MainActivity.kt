@@ -28,6 +28,7 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.core.content.ContextCompat
+import com.app.qrcode.ui.theme.Pink
 import com.app.qrcode.ui.theme.QrCodeTheme
 
 class MainActivity : ComponentActivity() {
@@ -122,7 +123,7 @@ class MainActivity : ComponentActivity() {
                     }
                     Box(modifier = Modifier
                         .size(300.dp)
-                        .border(width = 3.dp, color = Color.White)
+                        .border(width = 3.dp, color = Pink)
                         .constrainAs(box)
                         {
                             top.linkTo(parent.top)
